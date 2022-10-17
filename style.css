@@ -1,7 +1,104 @@
 /*
 Color Palette:
-background color:  
-font color:        
-secondary color:   
-tertiary color:    
+background color: #F1DDBF
+font color: #525E75
+secondary color: #18978F
+tertiary color: #54BAB9
 */
+
+/* CSS syntax notes: 
+     selector {property: valye;}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap');
+
+html {
+    font-size: 62.5%;    /* If font-size = 62.5%, than 1 rem = 10px */
+    
+}
+
+header {
+    margin: 0 4rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    border-bottom: 5px solid #18978F;
+    border-right: 1px solid #18978F;
+    border-left:1px solid #18978F;
+    padding: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 1.1rem;
+}
+
+body {
+    background-color: #F1DDBF;
+    color: #525E75;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+
+cite { /* caption */
+    font-size: 2rem;
+}
+
+p { /* credits */
+    font-size: 1.2rem;
+}
+
+.imagecard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 4rem;
+}
+
+.imagecard img {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    border: 1rem solid #18978F;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imagecard a {
+    text-decoration: none;
+    color: #18978F;
+}
+
+.cardtext {
+    color: #525E75;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 768px) {
+    
+    header {
+        font-size: 2rem;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .imagecard {
+        width: 28%;
+     /* transition: width 0.5s, height 0.5s; */
+    }
+    
+ /* .imagecard:hover {
+        width: 28.2%;  it was too buggy, might ask for help fixing in the future
+    } */
+}
+
+.Baller {
+ opacity: 0.15;   
+}
