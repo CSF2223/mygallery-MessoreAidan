@@ -91,11 +91,11 @@ p { /* credits */
 
     .imagecard {
         width: 28%;
-        transition: width 0.5s, height 0.5s;
+        transition: width 1s, height 1s;
     }
     
     .imagecard:hover {
-        width: 50%;
+        width: 30%;
     }
 }
 
