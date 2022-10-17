@@ -13,15 +13,15 @@ tertiary color: #54BAB9
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap');
 
 html {
-    font-size: 62.5%;    /* Default font size is 16px - 62.5% of 16 is 10px - 
-                            1 rem (relative unti) now will be equivalent to 10px */
+    font-size: 62.5%;    /* If font-size = 62.5%, than 1 rem = 10px */
+    
 }
 
 header {
     margin: 0 4rem;
     letter-spacing: 0.3rem;
     text-align: center;
-    border-bottom: 1px solid #18978F;
+    border-bottom: 5px solid #18978F;
     border-right: 1px solid #18978F;
     border-left:1px solid #18978F;
     padding: 0.5rem;
@@ -79,7 +79,7 @@ p { /* credits */
 @media (min-width: 768px) {
     
     header {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .gallery {
@@ -90,7 +90,12 @@ p { /* credits */
     }
 
     .imagecard {
-        max-width: 30%;
+        width: 28%;
+        transition: width 0.5s, height 0.5s;
+    }
+    
+    .imagecard:hover {
+        width: 50%;
     }
 }
 
